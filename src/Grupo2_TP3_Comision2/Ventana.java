@@ -7,12 +7,12 @@ import javax.swing.JFrame;
 
 public class Ventana extends javax.swing.JFrame {
     
-    /// Participantes - Grupo 2 - Comision 2///
-    // > Walter Alexander Vertacnik
-    // > Soto Vela Luciano Ezequiel
-    // > Ferro Julieta
-    // > Pagnone Patricia
-    // > Muñoz Maycol
+    /// Participantes - Grupo 2 - Comision 2 - TP3 ///
+    // > Walter Alexander Vertacnik - DNI
+    // > Soto Vela Luciano Ezequiel - DNI
+    // > Ferro Julieta - DNI
+    // > Pagnone Patricia - DNI
+    // > Muñoz Maycol - DNI
     
     @SuppressWarnings("unchecked") // NO modificar el Generated Code de aqui abajo
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
