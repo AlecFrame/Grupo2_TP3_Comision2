@@ -1,10 +1,6 @@
 
 package Grupo2_TP3_Comision2;
 
-import java.awt.Color;
-import javax.swing.JFrame;
-
-
 public class Ventana extends javax.swing.JFrame {
     
     ///............EJERCICIO 1.............
@@ -14,6 +10,10 @@ public class Ventana extends javax.swing.JFrame {
     // > Ferro Julieta
     // > Pagnone Patricia
     // > Muñoz Maycol
+    
+    public Ventana() {
+        initComponents();
+    }
     
     @SuppressWarnings("unchecked") // NO modificar el Generated Code de aqui abajo
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -129,18 +129,6 @@ public class Ventana extends javax.swing.JFrame {
     private void jTFUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFUsuarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTFUsuarioActionPerformed
-
-    public static void main(String args[]) {
-        
-        /////////////////// Ventana Propiedades /////////////////////////////////
-        JFrame ventana = new JFrame("NombreVentana");
-        ventana.setBackground(Color.white);
-        ventana.setSize(400,400); //Valores por defecto por ahora
-        ventana.setVisible(true);
-        /////////////////////////////////////////////////////////////////////////
-        
-        
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLcontrasenia;
