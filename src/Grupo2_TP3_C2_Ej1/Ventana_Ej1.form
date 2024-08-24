@@ -8,7 +8,7 @@
       <Color blue="64" green="64" id="Window Border" palette="2" red="64" type="palette"/>
     </Property>
     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-      <Color id="Cursor Por defecto"/>
+      <Color id="Default Cursor"/>
     </Property>
   </Properties>
   <SyntheticProperties>
@@ -35,7 +35,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPprincipal" min="-2" pref="363" max="-2" attributes="0"/>
+          <Component id="jPprincipal" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -69,7 +69,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jlInicioSesion" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="18" max="32767" attributes="0"/>
                   <Component id="panelFondCredenciales" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="panel2" min="-2" max="-2" attributes="0"/>
@@ -109,7 +109,7 @@
             <Component class="javax.swing.JButton" name="jButtonOcultar">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/ocultar.png"/>
+                  <Image iconType="3" name="/Grupo2_TP3_C2_Ej1/ocultar.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ocultar"/>
               </Properties>
@@ -120,7 +120,7 @@
             <Component class="javax.swing.JButton" name="jButtonVer">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/ver.png"/>
+                  <Image iconType="3" name="/Grupo2_TP3_C2_Ej1/ver.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ver"/>
               </Properties>
@@ -211,7 +211,7 @@
               <SubComponents>
                 <Component class="javax.swing.JPasswordField" name="jPassUsuario">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="jPasswordField1"/>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jPassUsuarioMouseClicked"/>
@@ -232,7 +232,7 @@
                 <Component class="javax.swing.JButton" name="jButtonRegistar">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/images.jpg"/>
+                      <Image iconType="3" name="/Grupo2_TP3_C2_Ej1/images.jpg"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Registrar"/>
                   </Properties>

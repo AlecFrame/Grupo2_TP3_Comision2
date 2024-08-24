@@ -1,3 +1,5 @@
+package Grupo2_TP3_C2_Ej1;
+
 
 import javax.swing.JOptionPane;
 
@@ -50,7 +52,7 @@ public class Ventana_Ej1 extends javax.swing.JFrame {
 
         jPprincipal.setBackground(new java.awt.Color(0, 102, 102));
 
-        jButtonOcultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ocultar.png"))); // NOI18N
+        jButtonOcultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Grupo2_TP3_C2_Ej1/ocultar.png"))); // NOI18N
         jButtonOcultar.setText("Ocultar");
         jButtonOcultar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,7 +60,7 @@ public class Ventana_Ej1 extends javax.swing.JFrame {
             }
         });
 
-        jButtonVer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ver.png"))); // NOI18N
+        jButtonVer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Grupo2_TP3_C2_Ej1/ver.png"))); // NOI18N
         jButtonVer.setText("Ver");
         jButtonVer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,7 +90,7 @@ public class Ventana_Ej1 extends javax.swing.JFrame {
 
         panelFondCredenciales.setBackground(new java.awt.Color(0, 204, 204));
 
-        jPassUsuario.setText("jPasswordField1");
+        jPassUsuario.setToolTipText("");
         jPassUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPassUsuarioMouseClicked(evt);
@@ -99,7 +101,7 @@ public class Ventana_Ej1 extends javax.swing.JFrame {
 
         jlContrasenia.setText("Contraseña");
 
-        jButtonRegistar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images.jpg"))); // NOI18N
+        jButtonRegistar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Grupo2_TP3_C2_Ej1/images.jpg"))); // NOI18N
         jButtonRegistar.setText("Registrar");
         jButtonRegistar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -187,7 +189,7 @@ public class Ventana_Ej1 extends javax.swing.JFrame {
             .addGroup(jPprincipalLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jlInicioSesion)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addComponent(panelFondCredenciales, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -202,7 +204,7 @@ public class Ventana_Ej1 extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPprincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPprincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -211,10 +213,12 @@ public class Ventana_Ej1 extends javax.swing.JFrame {
     private void jButtonRegistarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegistarActionPerformed
         String texto= jtxtUsuario.getText();
         String mail= "alumno@ulp.edu.ar";
-        String texto2= jPassUsuario.getName();
+        char[] passArray = jPassUsuario.getPassword();
+        String texto2 = new String(passArray); // Convertimos el array de caracteres en una cadena
         String pass="12345678";
+        
         try{
-        if(texto.equalsIgnoreCase(mail) && texto2.equalsIgnoreCase(pass)){
+        if(texto.equalsIgnoreCase(mail) && texto2.equals(pass)){
             JOptionPane.showConfirmDialog(null, "Bienvenido. Ha ingresado con éxito. ¿Desea continuar?");
         }else{
             JOptionPane.showConfirmDialog(null, "Usuario y/o contraseña incorrectos.");
@@ -238,23 +242,6 @@ public class Ventana_Ej1 extends javax.swing.JFrame {
         jPassUsuario.setEchoChar((char)0);
     }//GEN-LAST:event_jButtonVerActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Ventana_Ej1().setVisible(true);
-            }
-        });
-       
-        
-        
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonOcultar;

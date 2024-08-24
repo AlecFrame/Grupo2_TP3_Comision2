@@ -1,6 +1,10 @@
 
 package Grupo2_TP3_Comision2;
 
+import Grupo2_TP3_C2_Ej1.Ventana_Ej1;
+import Grupo2_TP3_C2_Ej2.ConversorTemperatura;
+import java.awt.Color;
+
 public class Ventana extends javax.swing.JFrame {
     
     ///............EJERCICIO 1.............
@@ -19,125 +23,121 @@ public class Ventana extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLinicioSesion = new javax.swing.JLabel();
-        panel1 = new java.awt.Panel();
-        jLcredenciales = new javax.swing.JLabel();
-        jLusuario = new javax.swing.JLabel();
-        jTFUsuario = new javax.swing.JTextField();
-        jLcontrasenia = new javax.swing.JLabel();
-        jPusuario = new javax.swing.JPasswordField();
-        panel2 = new java.awt.Panel();
+        jPanel1 = new javax.swing.JPanel();
+        Titulo = new javax.swing.JLabel();
+        bEjercicio1 = new javax.swing.JButton();
+        bEjercicio2 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLinicioSesion.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLinicioSesion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLinicioSesion.setText("Inicio de Sesión");
-        jLinicioSesion.setName(""); // NOI18N
+        Titulo.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        Titulo.setText("Trabajo Práctico 3");
 
-        jLcredenciales.setText("Ingrese sus credenciales");
-
-        jLusuario.setText("Usuario");
-
-        jTFUsuario.addActionListener(new java.awt.event.ActionListener() {
+        bEjercicio1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        bEjercicio1.setText("Ejercicio 1");
+        bEjercicio1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTFUsuarioActionPerformed(evt);
+                bEjercicio1ActionPerformed(evt);
             }
         });
 
-        jLcontrasenia.setText("Contraseña");
+        bEjercicio2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        bEjercicio2.setText("Ejercicio 2");
+        bEjercicio2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bEjercicio2ActionPerformed(evt);
+            }
+        });
 
-        jPusuario.setText("jPasswordField1");
+        jLabel1.setText("El Ej2 es un convertidor de unidades de temperatura");
 
-        javax.swing.GroupLayout panel1Layout = new javax.swing.GroupLayout(panel1);
-        panel1.setLayout(panel1Layout);
-        panel1Layout.setHorizontalGroup(
-            panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel1Layout.createSequentialGroup()
-                .addComponent(jLcredenciales)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
-                .addContainerGap(64, Short.MAX_VALUE)
-                .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLusuario, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLcontrasenia, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTFUsuario)
-                    .addComponent(jPusuario, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        panel1Layout.setVerticalGroup(
-            panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(jLcredenciales)
-                .addGap(18, 18, 18)
-                .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTFUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLusuario))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLcontrasenia)
-                    .addComponent(jPusuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(112, Short.MAX_VALUE))
-        );
+        jLabel2.setText("El Ej1 es un formulario de login.");
 
-        javax.swing.GroupLayout panel2Layout = new javax.swing.GroupLayout(panel2);
-        panel2.setLayout(panel2Layout);
-        panel2Layout.setHorizontalGroup(
-            panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        jLabel3.setText("El usario predeterminado es: alumno@ulp.edu.ar");
+
+        jLabel4.setText("La contraseña predeterminada es: 1234578");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 18, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(bEjercicio1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(bEjercicio2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel1)))
+                .addGap(43, 43, 43))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(117, 117, 117)
+                .addComponent(Titulo)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        panel2Layout.setVerticalGroup(
-            panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 51, Short.MAX_VALUE)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(Titulo)
+                .addGap(38, 38, 38)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(bEjercicio1)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel4)))
+                .addGap(29, 29, 29)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(bEjercicio2)
+                    .addComponent(jLabel1))
+                .addContainerGap(114, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(panel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 36, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLinicioSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(47, 47, 47))))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLinicioSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTFUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTFUsuarioActionPerformed
+    private void bEjercicio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bEjercicio1ActionPerformed
+        Ventana_Ej1 ventanaej1 = new Ventana_Ej1();
+        ventanaej1.setVisible(true);
+    }//GEN-LAST:event_bEjercicio1ActionPerformed
+
+    private void bEjercicio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bEjercicio2ActionPerformed
+        ConversorTemperatura ventanaej2 = new ConversorTemperatura();
+        ventanaej2.setVisible(true);
+    }//GEN-LAST:event_bEjercicio2ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLcontrasenia;
-    private javax.swing.JLabel jLcredenciales;
-    private javax.swing.JLabel jLinicioSesion;
-    private javax.swing.JLabel jLusuario;
-    private javax.swing.JPasswordField jPusuario;
-    private javax.swing.JTextField jTFUsuario;
-    private java.awt.Panel panel1;
-    private java.awt.Panel panel2;
+    private javax.swing.JLabel Titulo;
+    private javax.swing.JButton bEjercicio1;
+    private javax.swing.JButton bEjercicio2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
