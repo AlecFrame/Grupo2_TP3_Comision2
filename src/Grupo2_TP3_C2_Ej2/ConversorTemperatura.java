@@ -140,12 +140,13 @@ public class ConversorTemperatura extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+
     private void bConvertirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bConvertirActionPerformed
         try {
         long celcius = Long.parseLong(fText.getText());
-        JOptionPane.showConfirmDialog(null, "Es igual a "+(((celcius*9)/5)+32)+" Grados Fahrenheit" );
+        JOptionPane.showMessageDialog(null, "Es igual a "+(((celcius*9)/5)+32)+" Grados Fahrenheit", "Resultado",JOptionPane.INFORMATION_MESSAGE );
         }catch(NumberFormatException ex) {
-            JOptionPane.showConfirmDialog(null, "El valor ingresado no es un numero");
+            JOptionPane.showMessageDialog(null, "El valor ingresado no es un numero", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_bConvertirActionPerformed
 

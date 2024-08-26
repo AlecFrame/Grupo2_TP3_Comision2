@@ -219,9 +219,23 @@ public class Ventana_Ej1 extends javax.swing.JFrame {
         
         try{
         if(texto.equalsIgnoreCase(mail) && texto2.equals(pass)){
-            JOptionPane.showConfirmDialog(null, "Bienvenido. Ha ingresado con éxito. ¿Desea continuar?");
+            int respuesta =JOptionPane.showOptionDialog(
+                    null,
+            "Bienvenido. Ha ingresado con éxito. ¿Desea continuar?",
+            "Confirmación",
+            JOptionPane.YES_NO_OPTION,
+            JOptionPane.INFORMATION_MESSAGE,
+            null,
+            new Object []{"Sí","No"},
+            "Sí"
+            );
         }else{
-            JOptionPane.showConfirmDialog(null, "Usuario y/o contraseña incorrectos.");
+            JOptionPane.showOptionDialog(null, "Usuario y/o contraseña incorrectos.", "Error",
+                    JOptionPane.DEFAULT_OPTION,
+                    JOptionPane.ERROR_MESSAGE,
+                    null,
+                    new Object[]{"Reintentar"},
+                    "Reintentar");
         }
         }catch(NumberFormatException ex){
             JOptionPane.showConfirmDialog(null, "Ocurrió un error");
