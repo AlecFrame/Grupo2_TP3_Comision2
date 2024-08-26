@@ -1,9 +1,8 @@
 
-package Grupo2_TP3_Comision2;
+package Grupo2_TP3_Grupo2_C2;
 
 import Grupo2_TP3_C2_Ej1.Ventana_Ej1;
 import Grupo2_TP3_C2_Ej2.ConversorTemperatura;
-import java.awt.Color;
 
 public class Ventana extends javax.swing.JFrame {
     
@@ -35,7 +34,7 @@ public class Ventana extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Titulo.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        Titulo.setText("Trabajo Práctico 3");
+        Titulo.setText("Trabajo Práctico 3 - Grupo 2 - C2");
 
         bEjercicio1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         bEjercicio1.setText("Ejercicio 1");
@@ -66,7 +65,7 @@ public class Ventana extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 18, Short.MAX_VALUE)
+                .addGap(0, 25, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(bEjercicio1)
@@ -81,7 +80,7 @@ public class Ventana extends javax.swing.JFrame {
                         .addComponent(jLabel1)))
                 .addGap(43, 43, 43))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(117, 117, 117)
+                .addGap(29, 29, 29)
                 .addComponent(Titulo)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
